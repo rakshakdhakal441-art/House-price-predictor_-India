@@ -10,7 +10,7 @@ st.set_page_config(page_title="House Price Predictor", page_icon="🏠")
 @st.cache_resource
 def load_model():
     # Ensure the path matches your folder structure
-    model_path = "model.pkl"
+    model_path = os.path.join("models", "model.pkl")
     return joblib.load(model_path)
 
 try:
