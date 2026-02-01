@@ -1,4 +1,5 @@
 import streamlit as st
+from sklearn.externals import joblib
 import joblib
 import numpy as np 
 import os
